@@ -23,30 +23,36 @@ body {
 
 .container__header {
     margin-bottom: 25px;
+    position: relative;
 }
 
 .img {
-    background-image: url(images/image-equilibrium.jpg);
-    width: 17.4rem;
-    height: 18rem;
+    width: 100%;
     border-radius: 15px;
+}
+
+.img__view {
+    background-color: hsl(178, 100%, 50%, .5);
+    padding: 40%;
+    opacity: 0;
     transition: .2s;
-    background-size: cover;
+    right: 0;
+    position: absolute;
+}
+
+.img__view:hover {
+    opacity: 1;
 }
 
 .img:hover {
-    background-image: url(images/icon-view.svg);
-    background-repeat: no-repeat;
-    background-color: hsla(178, 100%, 50%, 0.733);
     cursor: pointer;
-    background-position: center;
-    background-size: auto;
 }
 
 .description__img {
     margin-top: 15px;
     font-size: 1.4rem;
     transition: .2s;
+    display: inline-block;
 }
 
 .paragraph {
@@ -107,4 +113,10 @@ body {
 .name__avatar:hover, .description__img:hover {
     color: hsl(178, 100%, 50%);
     cursor: pointer;
+}
+
+@media only screen and (min-width: 1440px) {
+    .container__main {
+        width: 20%;
+    }
 }
