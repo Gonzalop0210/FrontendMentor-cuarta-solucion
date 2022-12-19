@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(217, 54%, 11%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container__main {
+    background-color: hsl(216, 50%, 16%);
+    width: 85%;
+    color: hsl(0, 0%, 100%);
+    font-family: 'Outfit';
+    padding: 20px 20px 30px 20px;
+    border-radius: 15px;
+}
+
+.container__header {
+    margin-bottom: 25px;
+}
+
+.img {
+    background-image: url(images/image-equilibrium.jpg);
+    width: 17.4rem;
+    height: 18rem;
+    border-radius: 15px;
+    transition: .2s;
+    background-size: cover;
+}
+
+.img:hover {
+    background-image: url(images/icon-view.svg);
+    background-repeat: no-repeat;
+    background-color: hsla(178, 100%, 50%, 0.733);
+    cursor: pointer;
+    background-position: center;
+    background-size: auto;
+}
+
+.description__img {
+    margin-top: 15px;
+    font-size: 1.4rem;
+    transition: .2s;
+}
+
+.paragraph {
+    color: hsl(215, 51%, 70%);
+    font-weight: 300;
+    font-size: .9rem;
+    letter-spacing: 1px;
+    line-height: 25px;
+}
+
+.conteiner__flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.div__div {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    gap: 10px;
+    font-size: .9rem;
+}
+
+.span__ethereum {
+    color: hsl(178, 100%, 50%);
+}
+
+.span__clock, .color {
+    color: hsl(215, 51%, 70%);
+}
+
+.line__footer {
+    color: hsl(215, 32%, 27%)
+}
+
+.container__footer {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.img__avatar {
+    width: 13%;
+    text-align: start;
+    border: 1px solid hsl(0, 0%, 100%);
+    border-radius: 50%;
+}
+
+.name__avatar {
+    font-size: .9rem;
+    margin-left: 5%;
+    font-weight: 300;
+    transition: .2s;
+}
+
+.name__avatar:hover, .description__img:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}

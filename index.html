@@ -1,33 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | NFT preview card component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equilibrium</title>
+    <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-  Equilibrium #3429
-
-  Our Equilibrium collection promotes balance and calm.
-
-  0.041 ETH
-  3 days left
-  
-  Creation of Jules Wyvern
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+    <main class="container__main">
+        <header class="container__header">
+            <img class="img">
+            <figcaption class="description__img">Equilibrium #34292</figcaption>
+        </header>
+        <p class="paragraph">Our Equilibrium collection promotes balance and calm.</p>
+        <div class="conteiner__flex">
+            <div class="div__div">
+                <img class="iconos__main" src="images/icon-ethereum.svg" alt="icono Ethereum">
+                <span class="span__ethereum">0.041 ETH</span>
+            </div>
+            <div class="div__div">
+                <img class="iconos__main" src="images/icon-clock.svg" alt="Icono Reloj">
+                <span class="span__clock">3 days left</span>
+            </div>
+        </div>
+        <hr class="line__footer">
+        <footer class="container__footer">
+            <img class="img__avatar" src="images/image-avatar.png" alt="Avatar">
+            <h3 class="name__avatar"><span class="color">Creation of</span> Jules Wyvern</h3>
+        </footer>
+    </main>
 </body>
 </html>
